@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills&Hobbies</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Youyu (Evelyn) Li</h1>
+            </div>
+            <img src="profile/3.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+            <div class="profile-card">
+                <p class="summary">
+                    Youyu Li is a dedicated researcher and intern with a strong background in public health, psychology, and economics. She has demonstrated expertise in data analysis, quality control, and research methodologies, utilizing tools such as SQL, RStudio, and SPSS. Her experience includes leading teams, conducting workshops, and improving service quality in healthcare settings.
+                </p>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="mailto:youyu.li@yale.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="tel:+12076168638" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container">
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Expected May 2025</div>
+                        <div class="timeline-content">
+                            <h3>Master of Public Health</h3>
+                            <span>Yale University, School of Public Health<br></span>
+                            <p>Field: Social and Behavioral Sciences</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2023</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Arts</h3>
+                            <span>Colby College<br></span>
+                            <p>Field: Psychology and Economics</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2024 – August 2024</div>
+                        <div class="timeline-content">
+                            <h3>QC Intern</h3>
+                            <span>Sanofi Beijing<br></span>
+                            <p>Conducted quality control research by analyzing microbial data from thousands of water samples and pharmaceutical products using MySQL. Designed and managed a database with variables such as bacterial counts, detection time, and sample locations. Applied SQL queries to clean and organize data, identify trends in microbial growth, and calculate failure rates across multiple sites. Generated monthly reports, providing actionable insights that improved product quality and ensured regulatory compliance.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">October 2022 – January 2023</div>
+                        <div class="timeline-content">
+                            <h3>Intern</h3>
+                            <span>Beibang Rehabilitation Hospital<br></span>
+                            <p>Led a team to investigate mental health challenges among Chinese teenagers, creating engaging content for a social media account. Tracked and analyzed engagement metrics to evaluate content effectiveness, refining strategies for future articles. Gathered and analyzed client feedback post-visit to enhance service quality and patient satisfaction. Designed and facilitated cognitive development workshops for children with autism.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2022 – May 2023</div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant</h3>
+                            <span>UCB Language and Cognitive Development Lab<br></span>
+                            <p>Conducted research on how children infer intelligence based on language, investigating the relationship between language use and cognitive development. Led participant recruitment and successfully enlisted over 100 participants. Performed data collection and analysis using R Studio and SPSS. Developed visualizations and detailed reports to present key findings.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">February 2022 – May 2022</div>
+                        <div class="timeline-content">
+                            <h3>Researcher</h3>
+                            <span>Project on Public Stigma and Mental Disorders<br></span>
+                            <p>Conducted research on stigma toward individuals with mental disorders among college students. Designed and administered surveys using Qualtrics, managing over 200 participants' responses. Conducted data analysis with SPSS and found significant correlations among variables. Authored a research paper and presented at the Annual Science Symposium at Colby College.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h2>Skills & Hobbies</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>SQL</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Python</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>RStudio</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Stata</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>SPSS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>Tableau</span>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-file-excel"></i>
+                        <span>Excel</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-file-powerpoint"></i>
+                        <span>PowerPoint</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Qualtrics</span>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Data Scraping</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+</html>
